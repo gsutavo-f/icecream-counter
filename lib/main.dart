@@ -29,17 +29,13 @@ class _HomePageState extends State<HomePage> {
 
   void decrement() {
     setState(() {
-      if (count > 0) {
-        count--;
-      }
+      count--;
     });
   }
 
   void increment() {
     setState(() {
-      if (count <= 20) {
-        count++;
-      }
+      count++;
     });
   }
 
@@ -109,7 +105,8 @@ class _HomePageState extends State<HomePage> {
                   child: TextButton(
                     onPressed: isFull ? null : increment,
                     style: TextButton.styleFrom(
-                      backgroundColor: isFull ? Colors.white.withOpacity(0.2) : Colors.white,
+                      backgroundColor:
+                          isFull ? Colors.white.withOpacity(0.2) : Colors.white,
                       fixedSize: const Size(100, 100),
                       primary: Colors.black,
                       shape: RoundedRectangleBorder(
